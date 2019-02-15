@@ -30,4 +30,4 @@ export RUNDECK_PREAUTH_ENABLED=true
 export RUNDECK_PREAUTH_USERNAME_HEADER=X-Forwarded-User
 export RUNDECK_PREAUTH_REDIRECT_LOGOUT=true
 
-exec "$@"
+#exec "$@"
