@@ -9,7 +9,7 @@ export AWS_DEFAULT_REGION=ap-northeast-1
 export RUNDECK_DATABASE_DRIVER=org.postgresql.Driver
 
 # https://なアドレスを指定すればSSL対応される
-export RUNDECK_GRAILS_URL=https://rundeck.example.com
+#export RUNDECK_GRAILS_URL=https://rundeck.example.com
 export RUNDECK_SERVER_ADDRESS=0.0.0.0
 
 # https://rundeck.org/docs/administration/security/configuring-ssl.html#using-an-ssl-terminated-proxy
