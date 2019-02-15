@@ -21,6 +21,7 @@ RUN set -ex && \
 ADD entrypoint.sh /home/rundeck/docker-lib/entrypoint.sh
 
 RUN chown rundeck:rundeck /home/rundeck/docker-lib/entrypoint.sh
+RUN chmod 744             /home/rundeck/docker-lib/entrypoint.sh
 
 USER rundeck
 
