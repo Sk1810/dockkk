@@ -29,4 +29,4 @@ RUN set -ex && \
 USER rundeck
 
 EXPOSE 4440
-ENTRYPOINT ["/lib/entry.sh"]
+ENTRYPOINT [ "docker-lib/entry.sh" ]
