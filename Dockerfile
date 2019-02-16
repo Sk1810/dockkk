@@ -1,5 +1,7 @@
 FROM rundeck/rundeck:3.0.8
 
+## https://github.com/rundeck/rundeck/blob/master/docker/yuminstall/Dockerfile
+
 USER root
 
 RUN set -ex && \
@@ -18,14 +20,13 @@ RUN set -ex && \
     mkdir /etc/rundeck && \
     chown -R rundeck:rundeck /etc/rundeck
 
-# entrypointはそのままで
-#ADD entrypoint.sh /home/rundeck/docker-lib/entrypoint.sh
 
-#RUN chown rundeck:rundeck /home/rundeck/docker-lib/entrypoint.sh
-#RUN chmod 744             /home/rundeck/docker-lib/entrypoint.sh
+ADD entrypoint.sh /home/rundeck/docker-lib/entrypoint.sh
+
+RUN chown rundeck:rundeck /home/rundeck/docker-lib/entrypoint.sh
+RUN chmod 744             /home/rundeck/docker-lib/entrypoint.sh
 
 USER rundeck
 
-#ENTRYPOINT [ "docker-lib/entrypoint.sh" ]
-
-CMD [ "docker-lib/entry.sh" ]
+EXPOSE 4440
+ENTRYPOINT ["/entry.sh"]
