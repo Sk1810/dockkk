@@ -29,4 +29,4 @@ RUN chmod 744             /home/rundeck/docker-lib/entrypoint.sh
 USER rundeck
 
 EXPOSE 4440
-ENTRYPOINT ["/entry.sh"]
+ENTRYPOINT ["/lib/entry.sh"]
