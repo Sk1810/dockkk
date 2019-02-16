@@ -26,6 +26,6 @@ RUN set -ex && \
 
 USER rundeck
 
-ENTRYPOINT [ "docker-lib/entrypoint.sh" ]
+#ENTRYPOINT [ "docker-lib/entrypoint.sh" ]
 
 CMD [ "docker-lib/entry.sh" ]
