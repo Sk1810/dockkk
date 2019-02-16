@@ -1,6 +1,7 @@
 FROM rundeck/rundeck:3.0.8
 
-## https://github.com/rundeck/rundeck/blob/master/docker/yuminstall/Dockerfile
+## soruce
+## https://github.com/rundeck/rundeck/blob/master/docker/official/Dockerfile
 
 USER root
 
